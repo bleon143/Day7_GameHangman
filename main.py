@@ -85,11 +85,11 @@ while not IsGameOver: ## IsGameOver == False:
     ## TEST PRINT OUTPUT
     print(mod_hangman.stages[NumberOfLives])
 
-    ## CALL FUNCTION
+    ## CALL FUNCTION - CHECK GAME STATUS BEFORE NEXT ROUND OF WHILE LOOP
     GameStatus = mod_hangman.fn_CheckIfBlanks(WordStatus, IsGameOver)
 
-    ## CHECK AND SET GAME STATUS BEFORE NEXT ROUND OF WHILE LOOP
-    IsGameStatus = GameStatus
+    ## SET GAME STATUS BEFORE NEXT ROUND OF WHILE LOOP
+    IsGameOver = GameStatus
 
 ## TEST PRINT OUTPUT
 print("\n")
